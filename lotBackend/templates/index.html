@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PARKING_LOT</title>
+  </head>
+  <body>
+    <h3>Welcome to the parking Lot</h3>
+    <a href="{% url 'api:createParkingLot' %}">Create a parking Lot</a>
+    <br style = “line-height:5;”><br><a href="{% url 'api:customers' %}">Add a Customer</a>
+    <br style = “line-height:5;”><br><a href="{% url 'api:parkingStatus' %}">Parking Slots Status</a>
+    <br style = “line-height:5;”><br><a href="{% url 'api:reservations' %}">Add a parking slot reservation</a>
+
+  </body>
+</html>
